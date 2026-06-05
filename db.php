@@ -13,11 +13,11 @@ if (file_exists($env_file)) {
 }
 
 // Database configuration
-$db_host = getenv('DB_HOST') ?: 'sql207.infinityfree.com';
+$db_host = getenv('DB_HOST') ?: 'your db_host';
 $db_port = getenv('DB_PORT') ?: '3306';
-$db_user = getenv('DB_USER') ?: 'if0_41827976';
-$db_pass = getenv('DB_PASS') ?: 'yamla1819';
-$db_name = getenv('DB_NAME') ?:'if0_41827976_gummy';
+$db_user = getenv('DB_USER') ?: 'your db username';
+$db_pass = getenv('DB_PASS') ?: 'your db passwored';
+$db_name = getenv('DB_NAME') ?:'your db name';
 
 try {
     $pdo = new PDO("mysql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_pass);

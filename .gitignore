@@ -1,0 +1,22 @@
+# Environment variables
+secret.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+*.cache

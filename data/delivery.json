@@ -1,0 +1,60 @@
+[
+  {
+    "id": "18639",
+    "tracking_number": "ZA48291023",
+    "order_id": "ORD-2026-1042",
+    "courier": "Express Logistics",
+    "status": "in_transit",
+    "estimated_delivery": "2026-04-12",
+    "current_location": "Germiston Hub",
+    "customer_phone": "+27 82 555 1934",
+    "customer_email": "customer@example.com"
+
+  },
+  {
+    "id": "23468",
+    "tracking_number": "TCG99213488",
+    "order_id": "ORD-2026-1043",
+    "courier": "Prime Delivery Solutions",
+    "status": "out_for_delivery",
+    "estimated_delivery": "2026-04-07",
+    "current_location": "Sandton Delivery Branch",
+    "customer_phone": "+27 73 441 8821",
+    "customer_email": "buyer@example.com"
+  },
+  {
+    "id": "37854",
+    "tracking_number": "ARX55321098",
+    "order_id": "ORD-2026-1044",
+    "courier": "Velocity Transport",
+    "status": "delivered",
+    "estimated_delivery": "2026-04-05",
+    "current_location": "Delivered",
+    "customer_phone": "+27 61 902 1134",
+    "customer_email": "user@example.com"
+   
+  },
+  {
+    "id": "47895",
+    "tracking_number": "FDX88219933",
+    "order_id": "ORD-2026-1045",
+    "courier": "Rapid Freight",
+    "status": "pending_pickup",
+    "estimated_delivery": "2026-04-15",
+    "current_location": "Cape Town Warehouse",
+    "customer_phone": "+27 84 221 9981",
+    "customer_email": "shopper@example.com"
+  },
+  {
+    "id": "56789",
+    "tracking_number": "DHL77231055",
+    "order_id": "ORD-2026-1046",
+    "courier": "DHL Express",
+    "status": "arrived_at_hub",
+    "estimated_delivery": "2026-04-11",
+    "current_location": "Durban Sorting Center",
+    "customer_phone": "+27 79 552 7712",
+    "customer_email": "client@example.com"
+   
+  }
+]

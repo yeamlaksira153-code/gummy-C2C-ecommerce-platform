@@ -25,9 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
     $password = trim($_POST['password'] ?? '');
 
-    // First, try DB-backed staff login.
     try {
-        // FIXED: Using explicit __DIR__ to prevent 500 errors
         require_once __DIR__ . '/../db.php';
         
         $stmt = $pdo->prepare('SELECT id, full_name, password, id_verified FROM users WHERE email = ? LIMIT 1');
@@ -54,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     } catch (Exception $e) {
-        // Fall through to env-based staff login.
     }
 
     $adminEmail = trim(load_env_value('ADMIN_EMAIL'));
@@ -68,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['roles'] = ['admin'];
         $_SESSION['role'] = 'admin';
         $_SESSION['is_admin'] = true;
-        $_SESSION['admin_logged_in'] = true; // Safety flag for middleware
+        $_SESSION['admin_logged_in'] = true; // flag for middleware
 
         echo '<script>window.location.href = "../admin/dashboard.php";</script>';
         exit;
